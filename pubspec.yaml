@@ -1,0 +1,12 @@
+name: endpoints_tictactoe_client
+version: 0.0.1
+author: Gerwin Sturm
+description: A simple client for a Tic Tac Toe game using Google Cloud Endpoints and Dart.
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  googleapis: any
+  googleapis_auth: any
+  myapi:
+    path: dependencies/myapi

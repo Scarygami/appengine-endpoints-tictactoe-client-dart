@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appengine-vm-endpoints-tictactoe-dart</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="tictactoe.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="signin">
+        <div id="signinStatusContainer">
+          <div id="signinButtonContainer" class="visible">
+            <div id="signInButton">
+              <span class="icon"></span>
+              <span class="buttonText">Sign in with Google</span>
+            </div>
+          </div>
+          <button id="signout">Sign Out</button>
+        </div>
+        <span id="userLabel">(not signed in)</span>
+      </div>
+      <button id="signOut" class="hidden">Sign out</button>
+      <div id="warning">
+        <img src="images/caution.gif">
+        <p>You must sign in to play!</p>
+      </div>
+      <div id="board" class="hidden">
+        <table>
+          <tr>
+            <td class="noTop noLeft">-</td>
+            <td class="noTop">-</td>
+            <td class="noTop noRight">-</td>
+          </tr>
+          <tr>
+            <td class="noLeft">-</td>
+            <td>-</td>
+            <td class="noRight">-</td>
+          </tr>
+          <tr>
+            <td class="noBottom noLeft">-</td>
+            <td class="noBottom">-</td>
+            <td class="noBottom noRight">-</td>
+          </tr>
+        </table>
+        <button id="restartButton">Restart</button>
+        <div id="victory"></div>
+      </div>
+      <div id="gameHistoryWrapper" class="hidden">
+        <h2>Recent Games</h2>
+        <ul id="gameHistory"></ul>
+      </div>
+    </div>
+    <script type="application/dart" src="tictactoe.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
