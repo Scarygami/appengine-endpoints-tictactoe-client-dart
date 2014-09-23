@@ -86,3 +86,26 @@ createImplicitBrowserFlow(id, scopes).then((BrowserOAuth2Flow flow) {
   });
 });
 ```
+
+### Using the API
+
+After we have an `AuthClient` from any of the flows we can use it for our API
+
+```
+var tictactoe = new TictactoeApi(client);
+```
+
+and then make calls against this API as defined in the Cloud Endpoints backend, e.g.
+
+```
+tictactoe.scores.list().then((list) {
+  list.items.forEach((score) {
+    // print score
+  });
+});
+```
+
+How the API methods, and especially the Schema classes look like depends a lot on the backend being used,
+e.g. python endpoints have a tendency to produce "ugly" class names like `TictactoeApiMessagesBoardMessage`.
+
+If you are using a different backend, e.g. in Java or Go, you might have to adjust some of the code to accommodate for those changes, which should be easy thanks to the Dart Editor :)
