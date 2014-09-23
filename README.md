@@ -87,7 +87,7 @@ createImplicitBrowserFlow(id, scopes).then((BrowserOAuth2Flow flow) {
 });
 ```
 
-### Using the API
+##### Using the API
 
 After we have an `AuthClient` from any of the flows we can use it for our API
 
