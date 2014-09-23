@@ -1,6 +1,8 @@
-##appengine-endpoints-tictactoe-client-dart
+<h2 itemprop="name">appengine-endpoints-tictactoe-client-dart</h2>
 
-A simple client for a Tic Tac Toe game using Google Cloud Endpoints and Dart.
+<p itemprop="description">A simple client for a Tic Tac Toe game using Google Cloud Endpoints and Dart.</p>
+
+<img src="https://lh3.googleusercontent.com/-GrxTG9h2fnw/VCFpQM4zKCI/AAAAAAACS7M/uFD4s-75UP8/w1024/tictactoe.png" itemprop="image" alt="Tic Tac Toe">
 
 
 ### Setup
